@@ -1,7 +1,8 @@
-$ = jQuery = require('jquery');
+"use strict";
+
 var React = require('react');
 var Router = require('react-router');
-var Routes = require('./routes');
+var routes = require('./routes');
 
 Router.run(routes, function(Handler) {
     React.render(<Handler/>, document.getElementById('app'));
